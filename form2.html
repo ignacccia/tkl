@@ -1,1087 +1,1749 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <link rel="icon" href="logo_kalbe.svg" />
     <title>Form</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Custom styles for this template -->
-        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
 
-        <!-- Custom styles for this page -->
-        <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link
+      href="vendor/datatables/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      src="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      src="https://cdn.datatables.net/responsive/2.4.1/css/responsive.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      src="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://cdn.datatables.net/v/bs4/dt-1.13.4/b-2.3.6/datatables.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.datatables.net/v/bs4/dt-1.13.4/b-2.3.6/datatables.min.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.colVis.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
     <script src="js/main.js"></script>
-    
-</head>
+  </head>
 
-<body id="page-top">
-
+  <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav sidebar sidebar-light accordion"
+        style="box-shadow: 0px 0px 10px rgba(65, 65, 65, 0.5); z-index: 1"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+        >
+          <div class="sidebar-brand-icon">
+            <img
+              src="img/logo_kalbe1.svg"
+              style="filter: drop-shadow(2px 1px 2px #7a7a7a)"
+            />
+          </div>
+        </a>
 
-        <!-- Sidebar -->
-        <ul class="navbar-nav sidebar sidebar-light accordion"  style="box-shadow: 0px 0px 10px rgba(65, 65, 65, 0.5);z-index: 1;" id="accordionSidebar">
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
 
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center">
-                <div class="sidebar-brand-icon">
-                    <img src="img/logo_kalbe1.svg" style="filter:drop-shadow(2px 1px 2px #7a7a7a);">
-                </div>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="form2.html">
+            <i class="fas fa-fw fa-pen-nib"></i>
+            <span>Form</span></a
+          >
+        </li>
+        <hr class="sidebar-divider my-0" />
+        <!-- Nav Item -->
+        <li class="nav-item">
+          <a class="nav-link" href="db.html">
+            <i class="fas fa-fw fa-database"></i>
+            <span>Database</span></a
+          >
+        </li>
 
-            </a>
+        <hr class="sidebar-divider my-0" />
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+        <!-- Nav Item  -->
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href=""
+            data-toggle="modal"
+            data-target="#logoutModal"
+          >
+            <i class="fas fa-fw fa-door-open" style="color: #f83321"></i>
+            <span style="color: #f83321">Logout</span></a
+          >
+        </li>
+        <hr class="sidebar-divider my-0" />
+        <!-- Divider -->
+        <hr class="d-none d-md-block" />
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="form2.html">
-                    <i class="fas fa-fw fa-pen-nib"></i>
-                    <span>Form</span></a>
-            </li>
-            <hr class="sidebar-divider my-0">
-            <!-- Nav Item -->
-            <li class="nav-item">
-                <a class="nav-link" href="db.html">
-                    <i class="fas fa-fw fa-database"></i>
-                    <span>Database</span></a>
-            </li>
-            
-            <hr class="sidebar-divider my-0">
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
 
-            <!-- Nav Item  -->
-            <li class="nav-item">
-                <a class="nav-link " href="" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-fw fa-door-open" style="color: #f83321"></i>
-                    <span style="color: #f83321">Logout</span></a>
-            </li>
-            <hr class="sidebar-divider my-0">
-            <!-- Divider -->
-            <hr class="d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-            <!-- Sidebar Message -->
-            <!-- <div class="sidebar-card d-none d-lg-flex">
+        <!-- Sidebar Message -->
+        <!-- <div class="sidebar-card d-none d-lg-flex">
                 <img class="sidebar-card-illustration mb-2" src="img/logo_kalbe.svg" alt="...">
                 <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
                 <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
             </div> -->
+      </ul>
+      <!-- End of Sidebar -->
 
-        </ul>
-        <!-- End of Sidebar -->
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-dark rounded-bottom bg-white lg text-light topbar rounded-bottom mb-5 mx-4 static-top shadow rounded-bottom"
+            style="
+              background-image: linear-gradient(
+                60deg,
+                #12974e,
+                rgba(26, 126, 71, 0.5)
+              );
+            "
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none round ed-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <h4 class="pt-2 ml-4">TKL Digital Production |</h4>
+            <h8 class="pt-1 ml-2">Form</h8>
 
-                <!-- Content Wrapper -->
-                <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Topbar Navbar -->
 
-                    <!-- Main Content -->
-                    <div id="content">
-        
-                        <!-- Topbar -->
-                    <nav class="navbar navbar-expand navbar-dark rounded-bottom bg-white lg text-light topbar rounded-bottom mb-5 mx-4 static-top shadow rounded-bottom" style="background-image: linear-gradient(60deg,#12974e,rgba(26, 126, 71, 0.5));">
-        
-                            <!-- Sidebar Toggle (Topbar) -->
-                            <button id="sidebarToggleTop" class="btn btn-link d-md-none round ed-circle mr-3">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <h4 class="pt-2 ml-4">TKL Digital Production | </h4>
-                            <h8 class="pt-1 ml-2">Form</h8>
-        
-                            <!-- Topbar Navbar -->
-                               
-                                <!-- <img src="img/logo_kalbe.svg" class="img-fluid float-left" alt="Left-aligned Image"> -->
-                                
-                                <ul class="navbar-nav ml-auto">
+            <!-- <img src="img/logo_kalbe.svg" class="img-fluid float-left" alt="Left-aligned Image"> -->
 
-                                    <!-- Nav Item - User Information -->
-                                    <li class="nav-item dropdown no-arrow">
-                                        <a class="nav-link">
-                                            <span class="mr-2 mt-1 d-none d-lg-inline text-light small">Kalbe Farma</span>
-                                            <img class="img-profile rounded-circle"
-                                                src="img/profilecircle.gif">
-                                        </a>
-                                    </li>        
-                                </ul>
-                        
-                        
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link">
+                  <span class="mr-2 mt-1 d-none d-lg-inline text-light small"
+                    >Kalbe Farma</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="img/profilecircle.gif"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
 
-            
-                    </nav>
-                        <!-- End of Topbar -->
-        
+          <!-- Card  -->
+          <div class="row my-3 mx-3">
+            <div class="col-xl-3 col-md-6 mb-3">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div
+                        class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                      >
+                        Nama Mesin
+                      </div>
+                      <div class="font-weight-bold text-sm text-gray-800">
+                        UHLMANN UPS 1070-22222
+                      </div>
+                    </div>
+                    <div class="col-auto"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-3">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div
+                        class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                      >
+                        Tanggal
+                      </div>
+                      <div class="font-weight-bold text-gray-800">
+                        01 Januari 2023
+                      </div>
+                    </div>
+                    <div class="col-auto"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-3">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div
+                        class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                      >
+                        Shift
+                      </div>
+                      <div class="mb-0 font-weight-bold text-gray-800">1</div>
+                    </div>
+                    <div class="col-auto"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-3">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div
+                        class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                      >
+                        OP/Packer
+                      </div>
+                      <div class="mb-0 font-weight-bold text-sm text-gray-800">
+                        SYB, AFJ, TUL, BRR, SEN
+                      </div>
+                    </div>
+                    <div class="col-auto"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                 <!-- Card  -->
-                 <div class="row my-3 mx-3">
-                    <div class="col-xl-3 col-md-6 mb-3">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Nama Mesin</div>
-                                        <div class=" font-weight-bold text-sm text-gray-800">UHLMANN UPS 1070-22222</div>
-                                    </div>
-                                    <div class="col-auto">
-                                    </div>
-                                </div>
-                            </div>
+          <!-- table -->
+          <div class="card shadow mx-4 my-1">
+            <div class="card-header py-0"></div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <div class="d-flex justify-content-center my-3">
+                  <button
+                    class="btn btn-none bg-gradient-success shadow h-100"
+                    style="color: #fff"
+                    data-toggle="modal"
+                    data-target="#formtkl2"
+                  >
+                    Tambah Data
+                  </button>
+                </div>
+                <table
+                  class="table table-striped"
+                  id="formtable"
+                  style="font-size: 12px; text-align: center"
+                >
+                  <thead
+                    class="thead"
+                    style="
+                      color: white;
+                      background-color: #3fbb77;
+                      text-align: center;
+                      font-weight: bold;
+                    "
+                  >
+                    <tr>
+                      <th>No.</th>
+                      <th><div style="width: 100px">Kode Kegiatan</div></th>
+                      <th>Dari Jam</th>
+                      <th>Sampai Jam</th>
+                      <th>Panggil Teknik</th>
+                      <th>Teknik Datang</th>
+                      <th>Durasi</th>
+                      <th>Aktivitas Kegiatan</th>
+                      <th><div style="width: 200px">Masalah/Penyebab</div></th>
+                      <th><div style="width: 100px">No. WR</div></th>
+                      <th>
+                        <div style="width: 200px">
+                          Disposisi/Tindakan Sementara
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-3">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Tanggal</div>
-                                        <div class=" font-weight-bold text-gray-800">01 Januari 2023</div>
-                                    </div>
-                                    <div class="col-auto">
-                                    </div>
-                                </div>
-                            </div>
+                      </th>
+                      <th>No. Schedule</th>
+                      <th>Kode Produk</th>
+                      <th>Batch Number</th>
+                      <th>Good</th>
+                      <th>Defect</th>
+                      <th>Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>8</td>
+                      <td>07:00</td>
+                      <td>07:10</td>
+                      <td></td>
+                      <td></td>
+                      <td>10</td>
+                      <td>brf</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <div style="width: 110px">
+                          <a
+                            class="btn btn-warning btn-sm"
+                            data-toggle="modal"
+                            data-target="#editform"
+                            >Edit</a
+                          >
+                          <a
+                            class="btn btn-danger btn-sm"
+                            data-toggle="modal"
+                            data-target="#deleteform"
+                            >Delete</a
+                          >
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-3">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Shift</div>
-                                        <div class="mb-0 font-weight-bold text-gray-800">1</div>
-                                    </div>
-                                    <div class="col-auto">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 mb-3">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            OP/Packer</div>
-                                        <div class="mb-0 font-weight-bold text-sm text-gray-800">SYB, AFJ, TUL, BRR, SEN</div>
-                                    </div>
-                                    <div class="col-auto">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-</div>
-                
-                <!-- table -->
-                <div class="card shadow mx-4 my-1">
-                    <div class="card-header py-0">
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <div class="d-flex justify-content-center my-3">
-                                <button class="btn btn-none bg-gradient-success shadow h-100" style="color:#fff" data-toggle="modal" data-target="#formtkl2">Tambah Data</button>
-                            </div>
-                            
-                <table class="table" id="formtable" style="font-size: 12px;text-align: center;">
-                    <thead class="thead" style="color:white;background-color: #3fbb77; text-align: center;font-weight: bold;">
-                        <tr>
-                            <th>No.</th>
-                            <th><div style="width: 100px;">Kode Kegiatan</div></th>
-                            <th>Dari Jam</th>
-                            <th>Sampai Jam</th>
-                            <th>Panggil Teknik</th>
-                            <th>Teknik Datang</th>
-                            <th>Durasi</th>
-                            <th>Aktivitas Kegiatan</th>
-                            <th><div style="width: 200px;">Masalah/Penyebab</div></th>
-                            <th><div style="width: 100px;">No. WR</div></th>
-                            <th><div style="width: 200px;">Disposisi/Tindakan Sementara</div></th>
-                            <th>No. Schedule</th>
-                            <th>Kode Produk</th>
-                            <th>Batch Number</th>
-                            <th>Good</th>
-                            <th>Defect</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>8</td>
-                            <td>07:00</td>
-                            <td>07:10</td>
-                            <td></td>
-                            <td></td>
-                            <td>10</td>
-                            <td>brf</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><div style="width: 110px;"><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></div></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>5</td>
-                            <td>07:10</td>
-                            <td>07:25</td>
-                            <td></td>
-                            <td></td>
-                            <td>15</td>
-                            <td>clit d</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td>120420</td>
-                            <td>0</td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>7</td>
-                            <td>07:25</td>
-                            <td>07:40</td>
-                            <td></td>
-                            <td></td>
-                            <td>15</td>
-                            <td>gbn</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>8</td>
-                            <td>07:40</td>
-                            <td>07:50</td>
-                            <td></td>
-                            <td></td>
-                            <td>10</td>
-                            <td>lc</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>8</td>
-                            <td>07:50</td>
-                            <td>08:05</td>
-                            <td></td>
-                            <td></td>
-                            <td>15</td>
-                            <td>app</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>2</td>
-                            <td>08:05</td>
-                            <td>08:45</td>
-                            <td></td>
-                            <td></td>
-                            <td>40</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>9</td>
-                            <td>08:45</td>
-                            <td>09:10</td>
-                            <td></td>
-                            <td></td>
-                            <td>25</td>
-                            <td>adj loss</td>
-                            <td>HASIL JP A DAN B TIDAK STABIL ANGKA 8 SEPERTI ANGKA 9</td>
-                            <td></td>
-                            <td>CUCI JP A DAN B ,LALU BUAT PATTERN ANGKA 8</td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>09:10</td>
-                            <td>09:15</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>g pvc</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>2</td>
-                            <td>09:15</td>
-                            <td>09:50</td>
-                            <td></td>
-                            <td></td>
-                            <td>35</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>8</td>
-                            <td>09:50</td>
-                            <td>09:55</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>g pvc</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>2</td>
-                            <td>09:55</td>
-                            <td>11:10</td>
-                            <td></td>
-                            <td></td>
-                            <td>75</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>8</td>
-                            <td>11:10</td>
-                            <td>11:15</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>g pvc</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>2</td>
-                            <td>11:15</td>
-                            <td>11:25</td>
-                            <td></td>
-                            <td></td>
-                            <td>10</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>8</td>
-                            <td>11:25</td>
-                            <td>11:30</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>g foil</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>2</td>
-                            <td>11:30</td>
-                            <td>11:45</td>
-                            <td></td>
-                            <td></td>
-                            <td>15</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>8</td>
-                            <td>11:45</td>
-                            <td>13:15</td>
-                            <td></td>
-                            <td></td>
-                            <td>90</td>
-                            <td>sholat jumat</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td>8</td>
-                            <td>13:15</td>
-                            <td>13:30</td>
-                            <td></td>
-                            <td></td>
-                            <td>15</td>
-                            <td>app</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td>2</td>
-                            <td>13:30</td>
-                            <td>14:05</td>
-                            <td></td>
-                            <td></td>
-                            <td>35</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td>8</td>
-                            <td>14:05</td>
-                            <td>14:10</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>g pvc</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td>2</td>
-                            <td>14:10</td>
-                            <td>14:45</td>
-                            <td></td>
-                            <td></td>
-                            <td>35</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td>8</td>
-                            <td>14:45</td>
-                            <td>14:50</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>verf akhir</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015634</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25458</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td>7</td>
-                            <td>14:50</td>
-                            <td>15:05</td>
-                            <td></td>
-                            <td></td>
-                            <td>15</td>
-                            <td>gbn</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015453</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25442</td>
-                            <td>2550</td>
-                            <td>0</td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>23</td>
-                            <td>8</td>
-                            <td>15:05</td>
-                            <td>15:15</td>
-                            <td></td>
-                            <td></td>
-                            <td>10</td>
-                            <td>lc</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015453</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25442</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td>8</td>
-                            <td>15:15</td>
-                            <td>15:25</td>
-                            <td></td>
-                            <td></td>
-                            <td>10</td>
-                            <td>app</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015453</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25442</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td>2</td>
-                            <td>15:25</td>
-                            <td>15:30</td>
-                            <td></td>
-                            <td></td>
-                            <td>5</td>
-                            <td>run</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>22015453</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25442</td>
-                            <td></td>
-                            <td></td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>26</td>
-                            <td>9</td>
-                            <td>15:30</td>
-                            <td>16:10</td>
-                            <td></td>
-                            <td></td>
-                            <td>40</td>
-                            <td>line stop</td>
-                            <td>op POR menunggu op</td>
-                            <td></td>
-                            <td></td>
-                            <td>22015453</td>
-                            <td>TPRGR</td>
-                            <td>KTPRGR25442</td>
-                            <td>106620</td>
-                            <td>0</td>
-                            <td><a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editform">Edit</a>
-                                <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteform">Delete</a></td>
-                        </tr>
-                    </tbody>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>07:10</td>
+                      <td>07:25</td>
+                      <td></td>
+                      <td></td>
+                      <td>15</td>
+                      <td>clit d</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td>120420</td>
+                      <td>0</td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>7</td>
+                      <td>07:25</td>
+                      <td>07:40</td>
+                      <td></td>
+                      <td></td>
+                      <td>15</td>
+                      <td>gbn</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>8</td>
+                      <td>07:40</td>
+                      <td>07:50</td>
+                      <td></td>
+                      <td></td>
+                      <td>10</td>
+                      <td>lc</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>8</td>
+                      <td>07:50</td>
+                      <td>08:05</td>
+                      <td></td>
+                      <td></td>
+                      <td>15</td>
+                      <td>app</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>2</td>
+                      <td>08:05</td>
+                      <td>08:45</td>
+                      <td></td>
+                      <td></td>
+                      <td>40</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>9</td>
+                      <td>08:45</td>
+                      <td>09:10</td>
+                      <td></td>
+                      <td></td>
+                      <td>25</td>
+                      <td>adj loss</td>
+                      <td>
+                        HASIL JP A DAN B TIDAK STABIL ANGKA 8 SEPERTI ANGKA 9
+                      </td>
+                      <td></td>
+                      <td>CUCI JP A DAN B ,LALU BUAT PATTERN ANGKA 8</td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>8</td>
+                      <td>09:10</td>
+                      <td>09:15</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>g pvc</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>2</td>
+                      <td>09:15</td>
+                      <td>09:50</td>
+                      <td></td>
+                      <td></td>
+                      <td>35</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>8</td>
+                      <td>09:50</td>
+                      <td>09:55</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>g pvc</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>2</td>
+                      <td>09:55</td>
+                      <td>11:10</td>
+                      <td></td>
+                      <td></td>
+                      <td>75</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>8</td>
+                      <td>11:10</td>
+                      <td>11:15</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>g pvc</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>2</td>
+                      <td>11:15</td>
+                      <td>11:25</td>
+                      <td></td>
+                      <td></td>
+                      <td>10</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>8</td>
+                      <td>11:25</td>
+                      <td>11:30</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>g foil</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>2</td>
+                      <td>11:30</td>
+                      <td>11:45</td>
+                      <td></td>
+                      <td></td>
+                      <td>15</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>8</td>
+                      <td>11:45</td>
+                      <td>13:15</td>
+                      <td></td>
+                      <td></td>
+                      <td>90</td>
+                      <td>sholat jumat</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>8</td>
+                      <td>13:15</td>
+                      <td>13:30</td>
+                      <td></td>
+                      <td></td>
+                      <td>15</td>
+                      <td>app</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>2</td>
+                      <td>13:30</td>
+                      <td>14:05</td>
+                      <td></td>
+                      <td></td>
+                      <td>35</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>8</td>
+                      <td>14:05</td>
+                      <td>14:10</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>g pvc</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>2</td>
+                      <td>14:10</td>
+                      <td>14:45</td>
+                      <td></td>
+                      <td></td>
+                      <td>35</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>8</td>
+                      <td>14:45</td>
+                      <td>14:50</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>verf akhir</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015634</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25458</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>7</td>
+                      <td>14:50</td>
+                      <td>15:05</td>
+                      <td></td>
+                      <td></td>
+                      <td>15</td>
+                      <td>gbn</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015453</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25442</td>
+                      <td>2550</td>
+                      <td>0</td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>8</td>
+                      <td>15:05</td>
+                      <td>15:15</td>
+                      <td></td>
+                      <td></td>
+                      <td>10</td>
+                      <td>lc</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015453</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25442</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>8</td>
+                      <td>15:15</td>
+                      <td>15:25</td>
+                      <td></td>
+                      <td></td>
+                      <td>10</td>
+                      <td>app</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015453</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25442</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>2</td>
+                      <td>15:25</td>
+                      <td>15:30</td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td>run</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>22015453</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25442</td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>26</td>
+                      <td>9</td>
+                      <td>15:30</td>
+                      <td>16:10</td>
+                      <td></td>
+                      <td></td>
+                      <td>40</td>
+                      <td>line stop</td>
+                      <td>op POR menunggu op</td>
+                      <td></td>
+                      <td></td>
+                      <td>22015453</td>
+                      <td>TPRGR</td>
+                      <td>KTPRGR25442</td>
+                      <td>106620</td>
+                      <td>0</td>
+                      <td>
+                        <a
+                          class="btn btn-warning btn-sm"
+                          data-toggle="modal"
+                          data-target="#editform"
+                          >Edit</a
+                        >
+                        <a
+                          class="btn btn-danger btn-sm"
+                          data-toggle="modal"
+                          data-target="#deleteform"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
-                
+
                 <script>
-                    $(document).ready(function () {
-                        $('#formtable').DataTable({
-                            paging: false,
-                            sort: false,
-                        });
+                  $(document).ready(function () {
+                    $('#formtable').DataTable({
+                      paging: false,
+                      sort: false,
+                      dom: 'Bfrtip',
+                      buttons: ['colvis'],
                     });
+                  });
                 </script>
-                
-                </div>
-                <div style="float: right;"><button type="submit" id="submitform" class="btn bg-gradient-success text-light my-4" name="submit" id="submit" data-submit="modal">Submit</button></div>
-                </div>
-                </div>
-        
-                <!-- /.container-fluid -->
-
+              </div>
+              <div style="float: right">
+                <button
+                  type="submit"
+                  id="submitform"
+                  class="btn bg-gradient-success text-light my-4"
+                  name="submit"
+                  id="submit"
+                  data-submit="modal"
+                >
+                  Submit
+                </button>
+              </div>
             </div>
-            <!-- End of Main Content -->
+          </div>
 
-                    <!-- Footer -->
-                    <footer class="sticky-footer bg-white">
-                        <div class="container my-auto">
-                            <div class="copyright text-center my-auto">
-                                <span>Copyright &copy; Technical Support Kalbe Farma 2023</span>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- End of Footer -->
-        
-                </div>
-                <!-- End of Content Wrapper -->
-        
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Technical Support Kalbe Farma 2023</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
     </div>
-            <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-                <i class="fas fa-angle-up"></i>
-            </a>
-    
-                <div class="modal fade" id="formtkl2" data-backdrop="static">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header h5 font-weight-bold text-uppercase" style="color:#12974e">
-                                Form TKL Digital
-                            </div>
-                            <div class="modal-body">
-                                <form action="/form/add" method="POST">                            
-                                <div class="row">
-                                    <div class="col-2">
-                                        <div class="form-group">
-                                            <label class="col-form-label">Kode Kegiatan</label>
-                                            <select class="form-control" id="kodekeg">
-                                            <option> Pilih Kode</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="form-group">
-                                            <label for="dari" class="col-form-label">Dari</label>
-                                            <input class="form-control" type="time" value="" id="dari">
-                                        </div>
-                                    </div>                 
-                                    <div class="col-2">
-                                        <div class="form-group">
-                                            <label for="panggil_teknik" class="col-form-label">Panggil Teknik</label>
-                                            <input class="form-control" type="time" value="" id="panggil_teknik">
-                                        </div>
-                                    </div>                 
-                                    <div class="col-2">
-                                        <div class="form-group">
-                                            <label for="datang_tekinik" class="col-form-label">Teknik Datang</label>
-                                            <input class="form-control" type="time" value="" id="datang_teknik">
-                                        </div>
-                                    </div>                 
-                                    <div class="col-2">
-                                        <div class="form-group">
-                                            <label for="sampai" class="col-form-label">Sampai</label>
-                                            <input class="form-control" type="time" value="" id="sampai">
-                                        </div>
-                                    </div>     
-                                    <div class="col-2">
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">Durasi</label>
-                                            <input class="form-control" type="text" id="durasi" disabled>
-                                        </div>
-                                    </div>                         
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label class="col-form-label">Aktivitas Kegiatan</label>
-                                            <select class="form-control" style="height: 45px;" id="kegiatan">                                
-                                                <!-- <option>Breakdown Mesin ABC Blistering</option>                                         -->
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">Masalah</label>
-                                            <input class="form-control" type="text" id="durasi">                                        
-                                        </div>                                    
-                                    </div>  
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">No. WR</label>
-                                            <input class="form-control" type="text" id="durasi">                                        
-                                        </div>                                    
-                                    </div> 
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">Disposisi/Tindakan Sementara</label>
-                                            <input class="form-control" type="text" id="durasi">                                        
-                                        </div>                                    
-                                    </div>  
-                                    <div class="col-4">
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="col-form-label">PIC Eng/Prod</label>
-                                            <input class="form-control" type="text" id="pic">                                        
-                                        </div>                                    
-                                    </div> 
-                                    <div class="col-12">
-                                        <div class="row d-flex justify-content-center">                            
-                                            <div class="col-2">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">No. Schedule</label>
-                                                    <input class="form-control" type="text" id="schedule" value="2341241" disabled>                                        
-                                                </div>                                    
-                                            </div> 
-                                            <div class="col-2">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">Kode Produk</label>
-                                                    <input class="form-control" type="text" id="kode" value="2341241" disabled>                                        
-                                                </div>                                    
-                                            </div> 
-                                            <div class="col-2">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">Batch Number</label>
-                                                    <input class="form-control" type="text" id="batch" value="2341241" disabled>                                        
-                                                </div>                                    
-                                            </div> 
-                                            <div class="col-2">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">Good</label>
-                                                    <input class="form-control" type="text" id="good" value="10000" disabled>                                        
-                                                </div>                                    
-                                            </div> 
-                                            <div class="col-2">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="col-form-label">Defect</label>
-                                                    <input class="form-control" type="text" id="defect" value="93" disabled>                                        
-                                                </div>                            
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    
-                                </div>  
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" name="cancel" id="cancel"data-dismiss="modal">Cancel</button>
-                                <button type="submit" id="btn1" class="btn bg-gradient-success text-light" name="submit" id="submit" data-submit="modal">Input to Table</button>
-                            </div>                       
-                            </form>
-                            </div>
-                        </div>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="modal fade" id="formtkl2" data-backdrop="static">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div
+            class="modal-header h5 font-weight-bold text-uppercase"
+            style="color: #12974e"
+          >
+            Form TKL Digital
+          </div>
+          <div class="modal-body">
+            <form action="/form/add" method="POST">
+              <div class="row">
+                <div class="col-2">
+                  <div class="form-group">
+                    <label class="col-form-label">Kode Kegiatan</label>
+                    <select class="form-control" id="kodekeg">
+                      <option>Pilih Kode</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="dari" class="col-form-label">Dari</label>
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="dari"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="panggil_teknik" class="col-form-label"
+                      >Panggil Teknik</label
+                    >
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="panggil_teknik"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="datang_tekinik" class="col-form-label"
+                      >Teknik Datang</label
+                    >
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="datang_teknik"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="sampai" class="col-form-label">Sampai</label>
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="sampai"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >Durasi</label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="durasi"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="col-form-label">Aktivitas Kegiatan</label>
+                    <select
+                      class="form-control"
+                      style="height: 45px"
+                      id="kegiatan"
+                    >
+                      <!-- <option>Breakdown Mesin ABC Blistering</option>                                         -->
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >Masalah</label
+                    >
+                    <input class="form-control" type="text" id="durasi" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >No. WR</label
+                    >
+                    <input class="form-control" type="text" id="durasi" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >Disposisi/Tindakan Sementara</label
+                    >
+                    <input class="form-control" type="text" id="durasi" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >PIC Eng/Prod</label
+                    >
+                    <input class="form-control" type="text" id="pic" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >No. Schedule</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="schedule"
+                          value="2341241"
+                          disabled
+                        />
+                      </div>
                     </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Kode Produk</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="kode"
+                          value="2341241"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Batch Number</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="batch"
+                          value="2341241"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Good</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="good"
+                          value="10000"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Defect</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="defect"
+                          value="93"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel" style="color: #e74a3b;">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-danger" href="index.html">Logout</a>
-                </div>
-            </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  name="cancel"
+                  id="cancel"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  id="btn1"
+                  class="btn bg-gradient-success text-light"
+                  name="submit"
+                  id="submit"
+                  data-submit="modal"
+                >
+                  Input to Table
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-                <!-- Modal Edit Form -->
-    <div class="modal fade" id="editform" data-backdrop="static">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header h5 font-weight-bold text-uppercase" style="color:white; background-color: #6a88e3;">
-                    Form TKL Digital
-                </div>
-                <div class="modal-body">
-                    <form action="/form/add" method="POST">                            
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label class="col-form-label">Kode Kegiatan</label>
-                                <select class="form-control" id="kodekeg">
-                                <option> Pilih Kode</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="dari" class="col-form-label">Dari</label>
-                                <input class="form-control" type="time" value="" id="dari">
-                            </div>
-                        </div>                 
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="panggil_teknik" class="col-form-label">Panggil Teknik</label>
-                                <input class="form-control" type="time" value="" id="panggil_teknik">
-                            </div>
-                        </div>                 
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="datang_tekinik" class="col-form-label">Teknik Datang</label>
-                                <input class="form-control" type="time" value="" id="datang_teknik">
-                            </div>
-                        </div>                 
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="sampai" class="col-form-label">Sampai</label>
-                                <input class="form-control" type="time" value="" id="sampai">
-                            </div>
-                        </div>     
-                        <div class="col-2">
-                            <div class="form-group">
-                                <label for="example-text-input" class="col-form-label">Durasi</label>
-                                <input class="form-control" type="text" id="durasi" disabled>
-                            </div>
-                        </div>                         
-                        <div class="col-4">
-                            <div class="form-group">
-                                <label class="col-form-label">Aktivitas Kegiatan</label>
-                                <select class="form-control" style="height: 45px;" id="kegiatan">                                
-                                    <!-- <option>Breakdown Mesin ABC Blistering</option>                                         -->
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="form-group">
-                                <label for="example-text-input" class="col-form-label">Masalah</label>
-                                <input class="form-control" type="text" id="durasi">                                        
-                            </div>                                    
-                        </div>  
-                        <div class="col-4">
-                            <div class="form-group">
-                                <label for="example-text-input" class="col-form-label">No. WR</label>
-                                <input class="form-control" type="text" id="durasi">                                        
-                            </div>                                    
-                        </div> 
-                        <div class="col-4">
-                            <div class="form-group">
-                                <label for="example-text-input" class="col-form-label">Disposisi/Tindakan Sementara</label>
-                                <input class="form-control" type="text" id="durasi">                                        
-                            </div>                                    
-                        </div>  
-                        <div class="col-4">
-                            <div class="form-group">
-                                <label for="example-text-input" class="col-form-label">PIC Eng/Prod</label>
-                                <input class="form-control" type="text" id="pic">                                        
-                            </div>                                    
-                        </div> 
-                        <div class="col-12">
-                            <div class="row d-flex justify-content-center">                            
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">No. Schedule</label>
-                                        <input class="form-control" type="text" id="schedule" value="2341241" disabled>                                        
-                                    </div>                                    
-                                </div> 
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">Kode Produk</label>
-                                        <input class="form-control" type="text" id="kode" value="2341241" disabled>                                        
-                                    </div>                                    
-                                </div> 
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">Batch Number</label>
-                                        <input class="form-control" type="text" id="batch" value="2341241" disabled>                                        
-                                    </div>                                    
-                                </div> 
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">Good</label>
-                                        <input class="form-control" type="text" id="good" value="10000" disabled>                                        
-                                    </div>                                    
-                                </div> 
-                                <div class="col-2">
-                                    <div class="form-group">
-                                        <label for="example-text-input" class="col-form-label">Defect</label>
-                                        <input class="form-control" type="text" id="defect" value="93" disabled>                                        
-                                    </div>                                    
-                                </div> 
-                            </div>
-                        </div>
-                        
-                    </div>  
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" name="cancel" id="cancel"data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-warning" name="submit" id="submit" data-submit="modal">Save Changes</button>
-                </div>                       
-                </form>
-                </div>
-            </div>
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="exampleModalLabel"
+              style="color: #e74a3b"
+            >
+              Ready to Leave?
+            </h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-danger" href="index.html">Logout</a>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- Modal Edit Form -->
+    <div class="modal fade" id="editform" data-backdrop="static">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div
+            class="modal-header h5 font-weight-bold text-uppercase"
+            style="color: white; background-color: #6a88e3"
+          >
+            Form TKL Digital
+          </div>
+          <div class="modal-body">
+            <form action="/form/add" method="POST">
+              <div class="row">
+                <div class="col-2">
+                  <div class="form-group">
+                    <label class="col-form-label">Kode Kegiatan</label>
+                    <select class="form-control" id="kodekeg">
+                      <option>Pilih Kode</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="dari" class="col-form-label">Dari</label>
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="dari"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="panggil_teknik" class="col-form-label"
+                      >Panggil Teknik</label
+                    >
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="panggil_teknik"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="datang_tekinik" class="col-form-label"
+                      >Teknik Datang</label
+                    >
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="datang_teknik"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="sampai" class="col-form-label">Sampai</label>
+                    <input
+                      class="form-control"
+                      type="time"
+                      value=""
+                      id="sampai"
+                    />
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >Durasi</label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="durasi"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label class="col-form-label">Aktivitas Kegiatan</label>
+                    <select
+                      class="form-control"
+                      style="height: 45px"
+                      id="kegiatan"
+                    >
+                      <!-- <option>Breakdown Mesin ABC Blistering</option>                                         -->
+                    </select>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >Masalah</label
+                    >
+                    <input class="form-control" type="text" id="durasi" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >No. WR</label
+                    >
+                    <input class="form-control" type="text" id="durasi" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >Disposisi/Tindakan Sementara</label
+                    >
+                    <input class="form-control" type="text" id="durasi" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="col-form-label"
+                      >PIC Eng/Prod</label
+                    >
+                    <input class="form-control" type="text" id="pic" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >No. Schedule</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="schedule"
+                          value="2341241"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Kode Produk</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="kode"
+                          value="2341241"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Batch Number</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="batch"
+                          value="2341241"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Good</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="good"
+                          value="10000"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="form-group">
+                        <label for="example-text-input" class="col-form-label"
+                          >Defect</label
+                        >
+                        <input
+                          class="form-control"
+                          type="text"
+                          id="defect"
+                          value="93"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  name="cancel"
+                  id="cancel"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-warning"
+                  name="submit"
+                  id="submit"
+                  data-submit="modal"
+                >
+                  Save Changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Delete Modal -->
     <div class="modal fade" id="deleteform" data-backdrop="static">
-        <div class="modal-dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-body">
-            <h6 class="text-center">Apakah anda yakin menghapus data ini?<br><br>
-            <span class="text-danger"><b>Kode Kegiatan 3- Blistering web control area<br>07.00-08.00</b></span></h6>
+          <div class="modal-body">
+            <h6 class="text-center">
+              Apakah anda yakin menghapus data ini?<br /><br />
+              <span class="text-danger"
+                ><b
+                  >Kode Kegiatan 3- Blistering web control area<br />07.00-08.00</b
+                ></span
+              >
+            </h6>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              name="cancel"
+              id="cancel"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-danger"
+              name="submit"
+              id="submit"
+              data-submit="modal"
+            >
+              Delete
+            </button>
+          </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" name="cancel" id="cancel"data-dismiss="modal">Cancel</button>
-            <button type="submit" class="btn btn-danger" name="submit" id="submit" data-submit="modal">Delete</button>
-        </div>
-        </div>
+      </div>
     </div>
-    </div>
-                <!-- Custom scripts for all pages-->
-                <script src="js/sb-admin-2.min.js"></script>
-
-
-</body>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+  </body>
 </html>
